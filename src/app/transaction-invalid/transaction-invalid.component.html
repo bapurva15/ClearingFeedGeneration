@@ -1,0 +1,25 @@
+<h2>Invalid transactions (dummydata)</h2>
+<table>
+    <tr>
+        <th>Transaction Id</th>
+        <th>Date</th>
+        <th>Payer</th>
+        <th>Payer Account</th>
+        <th>Payee</th>
+        <th>Payee Account</th>
+        <th>Amount</th>
+        <th>Currency</th>
+        <th>Status</th>
+    </tr>
+    <tr *ngFor="let t of transactions">
+        <td>{{t.txnRef}}</td>
+        <td>{{t.date}}</td>
+        <td>{{t.payer}}</td>
+        <td>{{t.payerAc}}</td>
+        <td>{{t.payee}}</td>
+        <td>{{t.payeeAc}}</td>
+        <td>{{t.amount}}</td>
+        <td>{{t.currency}}</td>
+        <td>{{t.status}}</td>
+    </tr>
+</table>
