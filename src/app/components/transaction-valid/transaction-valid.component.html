@@ -1,4 +1,4 @@
-<h2>All transactions regardless of status (dummydata)</h2>
+<h2>Valid transactions (db data)</h2>
 <table>
     <tr>
         <th>Transaction Id</th>
@@ -8,18 +8,14 @@
         <th>Payee</th>
         <th>Payee Account</th>
         <th>Amount</th>
-        <th>Currency</th>
-        <th>Status</th>
     </tr>
     <tr *ngFor="let t of transactions">
-        <td>{{t.txnRef}}</td>
+        <td>{{t.trans_ref}}</td>
         <td>{{t.date}}</td>
-        <td>{{t.payer}}</td>
-        <td>{{t.payerAc}}</td>
-        <td>{{t.payee}}</td>
-        <td>{{t.payeeAc}}</td>
+        <td>{{t.payerName}}</td>
+        <td>{{t.payerAccount}}</td>
+        <td>{{t.payeeName}}</td>
+        <td>{{t.payeeAccount}}</td>
         <td>{{t.amount}}</td>
-        <td>{{t.currency}}</td>
-        <td>{{t.status}}</td>
     </tr>
 </table>

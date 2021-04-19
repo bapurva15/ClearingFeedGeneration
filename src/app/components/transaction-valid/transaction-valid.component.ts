@@ -1,0 +1,23 @@
+import { Component, OnInit } from '@angular/core';
+import { TransactionValid } from 'src/app/models/transaction-valid.model';
+import { TransactionInvalidService } from 'src/app/services/transaction-invalid.service';
+import { TransactionValidService } from 'src/app/services/transaction-valid.service';
+
+@Component({
+  selector: 'app-transaction-valid',
+  templateUrl: './transaction-valid.component.html',
+  styleUrls: ['./transaction-valid.component.css']
+})
+export class TransactionValidComponent implements OnInit {
+
+  title = 'Fetch valid data only from server'
+  
+  transactions? : TransactionValid []
+
+  constructor(private service:TransactionValidService) { }
+
+  ngOnInit(): void {
+    this.service.showTransactions().subscribe(response=>{this.transactions=response});
+  }
+
+}
