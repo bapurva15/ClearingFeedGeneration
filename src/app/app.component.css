@@ -1,12 +1,59 @@
-body{
-    background-color: lightblue;
+
+.jumbotron{
+    background-color: rgb(78, 18, 243);
+    
+}
+.file-upload {
+    display: inline-block;
+    padding: 8px 12px; 
+    cursor: pointer;
+    border-radius: 4px;
+    background-color: #3027b0;
+    font-size: larger;
+    color: #fff;
+    
 }
 
-h1{
-    color:blueviolet
+input{
+    font-size: larger;
+    font-family: 'Courier New', Courier, monospace;
+    padding-left: 5%;
 }
 
-
-.file-input {
-    display: none;
+input[type=file]::file-selector-button {
+    padding: 8px 12px; 
+    cursor: pointer;
+    border-radius: 4px;
+    background-color: #3027b0;
+    font-size: larger;
+    color: #fff;;
   }
+
+  /*input[type="file"] {
+    position: absolute;
+    z-index: -1;
+    top: 6px;
+    left: 0;
+    font-size: 15px;
+    color: rgb(153,153,153);
+  }
+
+  .upload-input{
+      position: relative;
+  }*/
+
+  h1{
+        color:white;
+  }
+
+  h2.display-4{
+      padding-left: 2%;
+      font-weight: 400;
+      
+  }
+
+  .upload{
+      padding-left: 2%;
+  }
+
+ 

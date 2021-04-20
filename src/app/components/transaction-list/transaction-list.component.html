@@ -1,25 +1,32 @@
-<h2>All transactions regardless of status (backend db data)</h2>
-<table border=1>
-    <tr>
-        <th>No.</th>
-        <th>Transaction Id</th>
-        <th>Date</th>
-        <th>Payer</th>
-        <th>Payer Account</th>
-        <th>Payee</th>
-        <th>Payee Account</th>
-        <th>Amount</th>
-        <th>Status</th>
-    </tr>
-    <tr *ngFor="let t of transactions">
-        <td>{{t.aid}}</td>
-        <td>{{t.atrans_ref}}</td>
-        <td>{{t.adate}}</td>
-        <td>{{t.apayerName}}</td>
-        <td>{{t.apayerAccount}}</td>
-        <td>{{t.apayeeName}}</td>
-        <td>{{t.apayeeAccount}}</td>
-        <td>{{t.aamount}}</td>
-        <td>{{t.valid}}</td>
-    </tr>
-</table>
+<body>
+
+        <h2 class="display-4">Transactions</h2>
+
+        <br>
+
+        <table class="table center">
+            <tr>
+                <th>No.</th>
+                <th>Transaction Id</th>
+                <th>Date</th>
+                <th>Payer</th>
+                <th>Payer Account</th>
+                <th>Payee</th>
+                <th>Payee Account</th>
+                <th>Amount</th>
+                <th>Status</th>
+            </tr>
+            <tr *ngFor="let t of transactions">
+                <td>{{t.aid}}</td>
+                <td>{{t.atrans_ref}}</td>
+                <td>{{t.adate}}</td>
+                <td>{{t.apayerName}}</td>
+                <td>{{t.apayerAccount}}</td>
+                <td>{{t.apayeeName}}</td>
+                <td>{{t.apayeeAccount}}</td>
+                <td>{{t.aamount}}</td>
+                <td>{{t.valid}}</td>
+            </tr>
+        </table>
+
+</body>

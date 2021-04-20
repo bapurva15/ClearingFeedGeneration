@@ -1,12 +1,63 @@
-<h1>Transactions</h1>
 
 <body>
 
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-3">Clearing Feed Generation</h1>
 
+  </div>
+</div>
+
+<h2 class="display-4">Welcome! upload a file and the status the Transactions</h2>
 <br>
-<app-transaction-list></app-transaction-list>
 <br>
-<app-transaction-valid></app-transaction-valid>
-<br>
-<app-transaction-invalid></app-transaction-invalid>
+  <div class="upload">
+  
+     <input type="file"> 
+
+    <!-- div class="upload-input">
+      <label class="file-upload" for="upload">Upload file
+      <input id="upload" type="file"/></label>
+
+
+    </div-->
+  </div>
+
+  <br>
+  <br>
+
+
+
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3">
+
+        <a class="btn btn-success btn-lg" routerLink="/valid">Valid Transactions</a>  
+       
+      </div>
+
+      <div class="col-md-3">
+         
+        <a class="btn btn-primary btn-lg" routerLink="/all">Transactions</a>  
+      </div>
+
+      <div class="col-md-3">
+        <a class="btn btn-danger btn-lg" routerLink="/invalid">Invalid Transactions</a>  
+
+      </div>
+
+      <div class="col-md-3">
+        <a class="btn btn-primary btn-lg" routerLink="">Download Feed File</a>  
+
+      </div>
+
+
+    </div>
+
+  </div>
+  <br> 
+  <br>
+  <router-outlet ></router-outlet>  
+
 </body>
