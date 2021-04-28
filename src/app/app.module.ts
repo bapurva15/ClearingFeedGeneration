@@ -19,6 +19,8 @@ import { TransactionValidService } from './services/transaction-valid.service';
 import { RouterModule } from '@angular/router';
 
 
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -35,6 +37,7 @@ import { RouterModule } from '@angular/router';
       {path: "invalid" , component:TransactionInvalidComponent}  
      ]), 
     AppRoutingModule,
+    
     HttpClientModule
   ],
   providers: [
