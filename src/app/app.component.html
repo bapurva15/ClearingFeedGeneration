@@ -1,63 +1,90 @@
 
+
 <body>
 
-<div class="jumbotron jumbotron-fluid">
-  <div class="container">
-    <h1 class="display-3">Clearing Feed Generation</h1>
+  <header>
+    <nav class="navbar  navbar-dark bg-primary">
+      <a class="navbar-brand" href="#" style="color: aliceblue;">
+        Clearing Feed Generation
+      </a>
+    </nav>
+  </header>
 
-  </div>
-</div>
+  <div class="container-fluid">
 
-<h2 class="display-4">Welcome! upload a file and the status the Transactions</h2>
-<br>
-<br>
-  <div class="upload">
+    <div class="container-fluid inputs">
+    
+      <div class="row justify-content-center">
+        <div class="col-7 file-upload">
   
-     <input type="file"> 
-
-    <!-- div class="upload-input">
-      <label class="file-upload" for="upload">Upload file
-      <input id="upload" type="file"/></label>
-
-
-    </div-->
-  </div>
-
-  <br>
-  <br>
-
-
-
-
-  <div class="container">
-    <div class="row">
-      <div class="col-md-3">
-
-        <a class="btn btn-success btn-lg" routerLink="/valid">Valid Transactions</a>  
-       
+          <div class="choose">
+            <input type="file"> 
+         </div>
+  
+         <div class="col-2 upload">
+          <a class="btn btn-outline-primary btn-lg" routerLink=""> Upload</a>
+          </div>
+  
+        </div>
+  
       </div>
-
-      <div class="col-md-3">
+  
+  
+      <br>
+      <br>
+      <br>
+  
+      <div class="row justify-content-center">
+  
+        <div class="col-md-2 valid">
+  
+          <a class="btn btn-outline-success btn-lg" routerLink="/valid">Valid Transactions</a>  
          
-        <a class="btn btn-primary btn-lg" routerLink="/all">Transactions</a>  
+        </div>
+  
+        <div class="col-md-2 all">
+           
+          <a class="btn btn-outline-primary btn-lg "  routerLink="/all">All Transactions</a>  
+        </div>
+  
+        <div class="col-md-2 invalid">
+          <a class="btn btn-outline-danger btn-lg" routerLink="/invalid">Invalid Transactions</a>  
+  
+        </div>
+  
+        <div class="col-md-2 Download">
+          <a class="btn btn-outline-info btn-lg" routerLink="/all">Download Feed File</a>  
+  
+        </div>
+  
+  
       </div>
 
-      <div class="col-md-3">
-        <a class="btn btn-danger btn-lg" routerLink="/invalid">Invalid Transactions</a>  
-
-      </div>
-
-      <div class="col-md-3">
-        <a class="btn btn-primary btn-lg" routerLink="">Download Feed File</a>  
-
-      </div>
 
 
     </div>
 
+
+    <br> 
+    <br>
+    <router-outlet ></router-outlet>  
+
   </div>
-  <br> 
-  <br>
-  <router-outlet ></router-outlet>  
+  
 
 </body>
+
+
+
+
+
+   
+
+  <!-- div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-3">Clearing Feed Generation</h1>
+
+    </div>
+  </div -->
+
+  <!-- h2 class="display-4">Welcome! upload a file and check the status the transactions</h2-->
