@@ -17,6 +17,10 @@ import { TransactionListService } from './services/transaction-list.service';
 import { TransactionInvalidService } from './services/transaction-invalid.service';
 import { TransactionValidService } from './services/transaction-valid.service';
 import { RouterModule } from '@angular/router';
+import { FileUploadComponent } from './components/file-upload/file-upload.component';
+import { LoginComponent } from './components/login/login.component';
+import { FileUploadService } from './services/file-upload.service';
+import { LoginService } from './services/login.service';
 
 
 
@@ -26,7 +30,9 @@ import { RouterModule } from '@angular/router';
     AppComponent,
     TransactionListComponent,
     TransactionValidComponent,
-    TransactionInvalidComponent    
+    TransactionInvalidComponent,
+    FileUploadComponent,
+    LoginComponent   
   ],
   imports: [
     BrowserModule,
@@ -43,7 +49,9 @@ import { RouterModule } from '@angular/router';
   providers: [
     TransactionListService,
     TransactionValidService,
-    TransactionInvalidService
+    TransactionInvalidService,
+    FileUploadService,
+    LoginService
   ],
   bootstrap: [AppComponent]
 })

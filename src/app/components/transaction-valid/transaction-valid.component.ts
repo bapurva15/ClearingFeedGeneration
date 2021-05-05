@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { TransactionValid } from 'src/app/models/transaction-valid.model';
-import { TransactionInvalidService } from 'src/app/services/transaction-invalid.service';
 import { TransactionValidService } from 'src/app/services/transaction-valid.service';
 
 @Component({
