@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { TransactionArchive } from 'src/app/models/transaction-list.model';
-import { TransactionListService } from '../../services/transaction-list.service';
+import { TransactionListService } from './transaction-list.service';
+
 
 @Component({
   selector: 'app-transaction-list',

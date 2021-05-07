@@ -7,12 +7,10 @@ import { Observable } from 'rxjs';
 })
 export class FileUploadService {
 
-  // API url
   baseApiUrl = "http://localhost:8080/upload"
     
   constructor(private http:HttpClient) { }
-  
-  // Returns an observable
+
   uploadFile(file:any):Observable<any> {
   
       // Create form data
