@@ -15,7 +15,6 @@ export class TransactionListService {
   constructor(private http:HttpClient) { }
 
   public showTransactions():Observable<TransactionArchive[]>{
-      return this.http.get<TransactionArchive[]>(this.baseApiUrl)
-      
+      return this.http.get<TransactionArchive[]>(this.baseApiUrl)   
   }
 }
