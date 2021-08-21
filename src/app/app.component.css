@@ -81,11 +81,3 @@ input[type=file]::-webkit-file-upload-button {
   .upload{
       display: inline;
   }
-
-  body{
-      background-color: teal;
-  }
- 
-  html{
-    background-color: teal;
-  }
