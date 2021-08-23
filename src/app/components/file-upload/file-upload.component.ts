@@ -12,7 +12,6 @@ export class FileUploadComponent implements OnInit {
  loading: boolean = false; // Flag variable
  file?: File; // Variable to store file
 
- // Inject service 
  constructor(private service: FileUploadService) { }
 
  ngOnInit(): void {
