@@ -12,7 +12,7 @@ import { MyService } from './my-services.service';
 })
 export class AppComponent {
   title = 'Clearing Feed Generation';
-  url = "http://localhost:8080/files";
+  url = "http://localhost:8080/download";
   file?: File;
   download?: File;
   loading: boolean = false;
@@ -24,7 +24,7 @@ export class AppComponent {
   
   onChange(event:any) {
     this.file = event.target.files[0];
-    this.url = "http://localhost:8080/files/";
+    this.url = "http://localhost:8080/download";
   }
 
   onUpload() {
@@ -37,7 +37,7 @@ export class AppComponent {
             }
         }
     );
-    this.url = this.url + this.file?.name;
+   // this.url = this.url + this.file?.name;
 }
 
 onDownload(){

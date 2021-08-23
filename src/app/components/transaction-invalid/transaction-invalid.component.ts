@@ -10,7 +10,6 @@ import { TransactionInvalidService } from './transaction-invalid.service';
 })
 export class TransactionInvalidComponent implements OnInit {
 
-  Title="Fetch invalid data only from server"
   transactions? : TransactionInvalid[];
   constructor(private service:TransactionInvalidService) { }
 

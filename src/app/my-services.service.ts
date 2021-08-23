@@ -2,13 +2,12 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 
-//import { Transaction } from './transaction-list/transaction-list.model';
-
 @Injectable({
   providedIn: 'root'
 })
 export class MyService {
 
+  uploaded = false;
   baseApiUrl = "http://localhost:8080"
 
   constructor(private http:HttpClient) { }
@@ -24,12 +23,14 @@ export class MyService {
     // Make http post request over api
     // with formData as req
     return this.http.post(this.baseApiUrl + "/upload", formData)
+    this.uploaded = true;
 }
 
-downloadFile():string{
-  
-  return window.URL.createObjectURL(this.http.get<any>( this.baseApiUrl + "/files/sample.txt"))
-
-
+downloadFile():string{  
+  if (this.uploaded=true){
+    return window.URL.createObjectURL(this.http.get<any>( this.baseApiUrl + "/download"))
+  }
+ // return window.URL.createObjectURL(this.http.get<any>( this.baseApiUrl + "/download"))
+ return ""
 }
 }
