@@ -10,7 +10,7 @@ import { TransactionValidComponent } from './components/transaction-valid/transa
 
 const routes: Routes = [
   { path: "valid", component: TransactionValidComponent },
-  { path: "all", component: TransactionListComponent },
+  { path: "archive", component: TransactionListComponent },
   { path: "invalid", component: TransactionInvalidComponent },
   { path: "upload", component: FileUploadComponent },
   { path: "clear", component: ClearTransactionsComponent},
