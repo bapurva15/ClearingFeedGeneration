@@ -14,8 +14,7 @@ const routes: Routes = [
   { path: "invalid", component: TransactionInvalidComponent },
   { path: "upload", component: FileUploadComponent },
   { path: "clear", component: ClearTransactionsComponent},
-  { path: "download", component: FileDownloadComponent },
-  { path: "**", component: PageNotFoundComponent }  
+  { path: "download", component: FileDownloadComponent } 
 ];
 
 @NgModule({
